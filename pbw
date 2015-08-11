@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+
+import pybullet
+import sys
+from subprocess import call
+def main(argv):
+    call(argv)
+    pybullet.push_sms('YOUR_PHONE_NUMBER_HERE', 'Finished' + argv[0])
+
+if __name__ == "__main__":
+    main(sys.argv[1:])
